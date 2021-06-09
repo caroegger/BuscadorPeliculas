@@ -4,7 +4,7 @@ const ListaPeliculas = ({peliculas, titulo}) => {
         <section>
             <h2>{titulo}</h2>
             <div>
-                { peliculas &&
+                {peliculas &&
                     peliculas.map( (pelicula) => (
                         <article key={pelicula.title}>
                             <img src={`https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`} />
