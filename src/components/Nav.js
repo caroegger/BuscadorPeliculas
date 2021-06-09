@@ -5,7 +5,7 @@ const Nav = () => {
         <nav>
             <ul>
                 {/* <li>
-                    IMG POCHOCLOS 
+                    IMG POCHOCLOS???
                 </li> */}
                 <li>
                     <Link to="/">

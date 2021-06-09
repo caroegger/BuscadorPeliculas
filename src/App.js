@@ -7,18 +7,9 @@ import Nav from './components/Nav'
 import Lanzamientos from './components/Lanzamientos'
 import Populares from './components/Populares'
 import Buscar from './components/Buscar'
+import MejorPuntuadas from './components/MejorPuntuadas'
 
-//COMPONENTS:
-  //HOME
-  //NAV
-  //BUSQUEDA
-  //SECCION PPAL?
-  //DETALLES DE PELIS
-  //LANZAMIENTOS
-  //POPULARES
-  //MEJOR PUNTUADAS
-  //FOOTER
-  //404
+//API KEY= 2d9a1d2ba98bd4f269229908068559f1
 
 const App = () => {
   return (
@@ -29,6 +20,8 @@ const App = () => {
         <Route exact path="/lanzamientos" component={Lanzamientos}/>
         <Route exact path="/populares" component={Populares}/>
         <Route exact path="/buscar" component={Buscar}/>
+        <Route exact path="/mejor-puntuadas" component={MejorPuntuadas}/>
+        {/* no olvidar footer y 404*/}
       </BrowserRouter>
     </div>
   );
