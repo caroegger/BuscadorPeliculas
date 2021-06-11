@@ -8,6 +8,7 @@ import Lanzamientos from './components/Lanzamientos'
 import Populares from './components/Populares'
 import Buscar from './components/Buscar'
 
+
 //API KEY= 2d9a1d2ba98bd4f269229908068559f1
 
 const App = () => {
