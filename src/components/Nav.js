@@ -4,7 +4,6 @@ import {AppBar, ThemeProvider} from '@material-ui/core';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from "@material-ui/core/Button";
 import {makeStyles} from "@material-ui/core/styles";
-import useFetch from '../hooks/useFetch';
 
 const useStyles = makeStyles ((theme) => ({
     root: {
@@ -30,19 +29,19 @@ const Nav = () => {
                 </li> */}
 
                 <Link to="/" className={classes.link}>
-                    <Button variant="contained" color="primary">Home</Button>
+                    <Button variant="contained" color="primary" disableElevation>Home</Button>
                 </Link>
 
                 <Link to="/lanzamientos" className={classes.link}>
-                    <Button variant="contained" color="primary">Ultimos Lanzamientos</Button>
+                    <Button variant="contained" color="primary" disableElevation>Ultimos Lanzamientos</Button>
                 </Link>
 
                 <Link to="/populares" className={classes.link}>
-                    <Button variant="contained" color="primary">Populares</Button>
+                    <Button variant="contained" color="primary" disableElevation>Populares</Button>
                 </Link>
 
                 <Link to="/buscar" className={classes.link}>
-                    <Button variant="contained" color="primary">Buscar</Button>
+                    <Button variant="contained" color="primary" disableElevation>Buscar</Button>
                 </Link>
             </Toolbar>
         </AppBar>
