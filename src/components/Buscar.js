@@ -23,10 +23,6 @@ const Buscar = () => {
         setInput(e.target.value)
     }
 
-    console.log(busqueda)
-    console.log(input)
-    console.log(resultado)
-
     return (
         <>
         <p>Busca tu pelicula</p>
