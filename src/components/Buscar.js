@@ -12,7 +12,7 @@ const Buscar = () => {
         .then (res => res.json())
         .then (data => {
         setResultado(data.results)})
-    }, [input] )    
+    }, [busqueda] )    
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -36,7 +36,7 @@ const Buscar = () => {
             </form>
         </div>
         <div>
-            [<ListaPeliculas peliculas={resultado}></ListaPeliculas>]
+            <ListaPeliculas peliculas={resultado}></ListaPeliculas>
         </div>
         </>
     )
