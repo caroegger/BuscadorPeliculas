@@ -4,6 +4,7 @@ import ListaPeliculas from "./ListaPeliculas";
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
+import Carrusel from "./Carrusel";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,13 +32,15 @@ const Home = () => {
     return (
         <>
         {/* //CARRUSEL */}
+        <div>
+            <Carrusel/>
+        </div>
         <div className={classes.root}>
             <GridList cellHeight={600} className={classes.gridList}>
                 {/* //peliculas populares */}
                 <GridListTile>
                     <ListaPeliculas titulo="Peliculas Populares" peliculas={populares}/>
                 </GridListTile>
-
                 <GridListTile>
                     {/* //mejor puntuadas */}
                     <ListaPeliculas titulo="Peliculas Populares" peliculas={mejorPuntuadas}/>
