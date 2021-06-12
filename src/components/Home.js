@@ -1,5 +1,6 @@
 import useFetch from "../hooks/useFetch";
 import ListaPeliculas from "./ListaPeliculas";
+import Footer from "./Footer"
 
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
@@ -32,9 +33,8 @@ const Home = () => {
     return (
         <>
         {/* //CARRUSEL */}
-        <div>
-            <Carrusel/>
-        </div>
+        <Carrusel/>
+
         <div className={classes.root}>
             <GridList cellHeight={600} className={classes.gridList}>
                 {/* //peliculas populares */}
@@ -47,6 +47,8 @@ const Home = () => {
                 </GridListTile>
             </GridList>
         </div>
+
+        <Footer/>
         </>
     )
 }
